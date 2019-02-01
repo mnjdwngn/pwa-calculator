@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<link href="calci.json" rel="manifest"/>
+<head>
+	<meta name="theme-color" content="#3385ff">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>calculator</title>
+	<style>
+	body{
+		background: linear-gradient(to right, #1c92d2, #f2fcfe);
+		}
+	input[type=text]
+	{
+	  text-transform: capitalize;
+	 text-align:right;
+	 width:200px;
+	 height:25px;
+	 font-size:16px;
+	 border-radius:5px;
+	 border-color:#336699;
+	}
+	input[type=button]
+	{
+	 color:#ffffff;
+	 margin-top:30px;
+	 margin-right:20px;
+	 height:30px;
+	 width:50px;
+	 font-size:20px;
+	 border-radius:5px;
+	 background-color:#336699;
+	 border-color:#f0f0f0;
+	 }
+	input[type=text]:hover
+	{
+	 box-shadow: 1px 1px 7px #336699;
+	}
+	input[type=button]:hover
+	{
+	box-shadow: 1px 1px 7px #336699;
+	}
+	
+	.main
+	{
+	margin:0px auto;
+	margin-top:100px;
+	 border:5px solid #336699;
+	 max-width:230px;
+	 padding-left:25px;
+	 padding-top:20px;
+	 padding-bottom:20px;
+	 border-radius:15px;
+	 box-shadow: 1px 1px 10px #336699;
+	 
+	 }
+	</style>
+	<script type="text/javascript">
+	function display(n1)
+	{
+	 calc.ans.value=calc.ans.value+n1;
+	 
+	 }
+	 
+	
+	</script>
+</head>
+<body>
+<div class="main">		
+	<form action="" name="calc">
+	<input type="text" name="ans"><br>
+	<input type="button" name="b1" value="1" onclick="deferredPrompt.prompt()">
+	<input type="button" name="b2" value="2" onclick="display(b2.value)">
+	<input type="button" name="b3" value="3" onclick="display(b3.value)"><br>
+	<input type="button" name="b4" value="4" onclick="display(b4.value)">
+	<input type="button" name="b5" value="5" onclick="display(b5.value)">
+	<input type="button" name="b6" value="6" onclick="display(b6.value)"><br>
+	<input type="button" name="b7" value="7" onclick="display(b7.value)">
+	<input type="button" name="b8" value="8" onclick="display(b8.value)">
+	<input type="button" name="b9" value="9" onclick="display(b9.value)"><br>
+	<input type="button" name="badd" value="+" onclick="display(badd.value)">
+	<input type="button" name="bsub" value="-" onclick="display(bsub.value)">
+	<input type="button" name="bequal" value="=" onclick="ans.value=eval(ans.value)" ><br>
+	<input type="button" name="bmul" value="*" onclick="display(bmul.value)">
+	<input type="button" name="bdiv" value="/" onclick="display(bdiv.value)">
+	<input type="button" name="bclear" value="CE" onclick="calc.ans.value=''">
+	</form>
+</div>
+	</body>
+</html>
+
+
+<!-- 
+1.
+
+ -->
